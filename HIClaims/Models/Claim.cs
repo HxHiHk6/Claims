@@ -8,7 +8,7 @@ namespace HIClaims.Models
 {
     public class Claim
     {
-        [Required(ErrorMessage ="Enter a valid Claim Number")]
+        [Required(ErrorMessage ="Please Enter a valid Claim Number")] //* code change by Team6 *//
         [Range(0, int.MaxValue, ErrorMessage = "Please enter valid Claim Number")]
         public int ClaimNo { get; set; }
         [Required(ErrorMessage = "Enter a valid Customer Name")]
